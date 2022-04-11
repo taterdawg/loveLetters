@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class Text extends React.Component {
+  constructor(props) {
+      super(props);
+      this.iterateLeft = this.iterateLeft.bind(this);
+      this.iterateRight = this.iterateRight.bind(this);
+      this.state = {
+          currentText: props.text[props.text.length - 1],
+          day: props.text.length
+      }
+  }
+  iterateLeft() {
+      this.setState({currentText: this.props.text[this.state.day - 2], day: this.state.day - 1}) 
+  }
+  iterateRight() {
+      this.setState({currentText: this.props.text[this.state.day], day: this.state.day + 1}) 
+  }
+  render() {
+      return (
+          <>
+          {console.log(this.state)}
+          <p id="heart-text">"{this.state.currentText}"</p>
+          <div id="loveButtons">
+          {this.state.day - 1 > 0 ? <button id="prevButton" onClick={this.iterateLeft}>Last</button> : <div id="nextButton"/>}
+          {this.state.day < this.props.text.length ? <button id="nextButton" onClick={this.iterateRight}>Next</button> : <div id="nextButton"/>}
+          </div>
+          </>
+      )
+  }
 }
 
-export default App;
+export default Text;

@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+
+#heart-con {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#heart-con {
+  cursor: default;
+}
+#hearts {
+  font-size: 100vh;
+  text-align: center;
+}
+#heart-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+#loveButtons {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+#prevButton {
+  background-color: #61dafb18;
+  width: 50vw;
+  outline: none;
+  border: none;
+  text-align: start;
+  padding: 10vw;
+}
+#nextButton {
+  background-color: #61dafb18;
+  width: 50vw;
+  outline: none;
+  border: none;
+  text-align: end;
+  padding: 10vw;
+}

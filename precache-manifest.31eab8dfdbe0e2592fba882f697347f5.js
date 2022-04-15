@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f0c4a0288abd72f4fb5f",
-    "url": "/loveletters/static/css/main.aaee5eb2.chunk.css"
+    "revision": "77b3195e04771bf42cae",
+    "url": "/loveletters/static/css/main.b68c0133.chunk.css"
   },
   {
-    "revision": "f0c4a0288abd72f4fb5f",
-    "url": "/loveletters/static/js/main.f0c4a028.chunk.js"
+    "revision": "77b3195e04771bf42cae",
+    "url": "/loveletters/static/js/main.77b3195e.chunk.js"
   },
   {
     "revision": "206e060bd7d3afd2158d",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/loveletters/static/js/runtime~main.fe7999c4.js"
   },
   {
-    "revision": "c99302eed051f985bf14c9c3fd074474",
+    "revision": "8f67c5608772cfd7f12d08bd6e7f3990",
     "url": "/loveletters/index.html"
   }
 ];

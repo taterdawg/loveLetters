@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import loveLetters from './loveLetters.json';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App text={loveLetters.text}/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
